@@ -13,10 +13,10 @@ public class ValidateUserInfo {
 
             Matcher matcher = pattern.matcher(firstName);
             if(matcher.matches()) {
-                return "Happy";
+                return "First name matches";
             }
             else {
-                return "Sad";
+                return "Wrong Input";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid First Name!" , UserRegistrationException.ExceptionType.INVALID_FIRST_NAME);
@@ -33,10 +33,10 @@ public class ValidateUserInfo {
 
             Matcher matcher = pattern.matcher(lastName);
             if(matcher.matches()) {
-                return "Happy";
+                return "Last Name Matches";
             }
             else {
-                return "Sad";
+                return "Wrong Input";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid First Name!" , UserRegistrationException.ExceptionType.INVALID_LAST_NAME);
@@ -52,10 +52,10 @@ public class ValidateUserInfo {
 
             Matcher matcher = pattern.matcher(emailId);
             if(matcher.matches()) {
-                return "Happy";
+                return " E-Mail Matches";
             }
             else {
-                return "Sad";
+                return "Wrong Input";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid Email ID!" , UserRegistrationException.ExceptionType.INVALID_EMAIL_ID);
@@ -71,10 +71,10 @@ public class ValidateUserInfo {
 
             Matcher matcher = pattern.matcher(mobNum);
             if(matcher.matches()) {
-                return "Happy";
+                return "Mobile Number Matches";
             }
             else {
-                return "Sad";
+                return "Wrong Input";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid Mobile Number!" , UserRegistrationException.ExceptionType.INVALID_MOBILE_NUMBER);
@@ -90,10 +90,10 @@ public class ValidateUserInfo {
 
             Matcher matcher = pattern.matcher(pswrd);
             if(matcher.matches()) {
-                return "Happy";
+                return "Password matches";
             }
             else {
-                return "Sad";
+                return "Wrong Input";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid Password!" , UserRegistrationException.ExceptionType.INVALID_PASSWORD);
