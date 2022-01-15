@@ -16,7 +16,7 @@ public class ValidateUserInfo {
                 return "First name matches";
             }
             else {
-                return "Wrong Input";
+                return "Not Matched";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid First Name!" , UserRegistrationException.ExceptionType.INVALID_FIRST_NAME);
@@ -36,7 +36,7 @@ public class ValidateUserInfo {
                 return "Last Name Matches";
             }
             else {
-                return "Wrong Input";
+                return "Not Matched";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid First Name!" , UserRegistrationException.ExceptionType.INVALID_LAST_NAME);
@@ -52,10 +52,10 @@ public class ValidateUserInfo {
 
             Matcher matcher = pattern.matcher(emailId);
             if(matcher.matches()) {
-                return " E-Mail Matches";
+                return "E-Mail Matches";
             }
             else {
-                return "Wrong Input";
+                return "Not Matched";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid Email ID!" , UserRegistrationException.ExceptionType.INVALID_EMAIL_ID);
@@ -74,7 +74,7 @@ public class ValidateUserInfo {
                 return "Mobile Number Matches";
             }
             else {
-                return "Wrong Input";
+                return "Not Matched";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid Mobile Number!" , UserRegistrationException.ExceptionType.INVALID_MOBILE_NUMBER);
@@ -93,7 +93,7 @@ public class ValidateUserInfo {
                 return "Password matches";
             }
             else {
-                return "Wrong Input";
+                return "Not Matched";
             }
         } catch(Exception e) {
             throw new UserRegistrationException("Please enter valid Password!" , UserRegistrationException.ExceptionType.INVALID_PASSWORD);
